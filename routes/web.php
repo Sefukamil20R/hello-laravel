@@ -52,3 +52,10 @@ Route::post('/logout', function (Request $request) {
 
     return response()->json(['message' => 'Logged out']);
 });
+Route::get('/auth', function () {
+    return view('auth');
+});
+
+Route::get('/tasks', function () {
+    return view('tasks');
+});
